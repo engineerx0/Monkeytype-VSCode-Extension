@@ -2,8 +2,6 @@
 
 Quickly practice typing tests on [Monkeytype](https://monkeytype.com) right inside Visual Studio Code's integrated browser.
 
-![Monkeytype VS Code](resources/monkeytype.svg)
-
 ---
 
 ## ✨ Features
