@@ -16,8 +16,8 @@
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other",
-    "Productivity"
+    "Education",
+    "Other"
   ],
   "keywords": [
     "monkeytype",
@@ -27,10 +27,6 @@
     "speed-test"
   ],
   "main": "./extension.js",
-  "activationEvents": [
-    "onView:monkeytype.sidebar",
-    "onCommand:monkeytype.open"
-  ],
   "contributes": {
     "commands": [
       {
@@ -53,7 +49,8 @@
       "monkeytype-container": [
         {
           "id": "monkeytype.sidebar",
-          "name": "Monkeytype"
+          "name": "Monkeytype",
+          "icon": "resources/monkeytype.svg"
         }
       ]
     },
