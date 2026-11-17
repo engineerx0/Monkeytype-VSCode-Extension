@@ -3,11 +3,15 @@
   "displayName": "Monkeytype",
   "description": "Quick access to Monkeytype inside Visual Studio Code's integrated browser.",
   "version": "0.1.0",
-  "publisher": "antigravity",
+  "publisher": "engineerx0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monkeytype-vscode"
+    "url": "https://github.com/engineerx0/Monkeytype-VSCode-Extension.git"
   },
+  "bugs": {
+    "url": "https://github.com/engineerx0/Monkeytype-VSCode-Extension/issues"
+  },
+  "homepage": "https://github.com/engineerx0/Monkeytype-VSCode-Extension#readme",
   "engines": {
     "vscode": "^1.85.0"
   },
