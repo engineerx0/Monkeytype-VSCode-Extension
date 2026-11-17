@@ -1,0 +1,75 @@
+{
+  "name": "monkeytype-vscode",
+  "displayName": "Monkeytype",
+  "description": "Quick access to Monkeytype inside Visual Studio Code's integrated browser.",
+  "version": "0.1.0",
+  "publisher": "antigravity",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monkeytype-vscode"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Productivity"
+  ],
+  "keywords": [
+    "monkeytype",
+    "typing",
+    "typing-test",
+    "wpm",
+    "speed-test"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onView:monkeytype.sidebar",
+    "onCommand:monkeytype.open"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "monkeytype.open",
+        "title": "Open Monkeytype",
+        "category": "Monkeytype",
+        "icon": "$(globe)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "monkeytype-container",
+          "title": "Monkeytype",
+          "icon": "resources/monkeytype.svg"
+        }
+      ]
+    },
+    "views": {
+      "monkeytype-container": [
+        {
+          "id": "monkeytype.sidebar",
+          "name": "Monkeytype"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "monkeytype.sidebar",
+        "contents": "Practice and improve your typing speed directly inside Visual Studio Code.\n[Open Monkeytype](command:monkeytype.open)\n\n---\n• Your settings, themes, and sound preferences are automatically preserved across sessions.\n• Focus the browser tab when typing so VS Code shortcuts do not intercept keystrokes."
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "monkeytype.open",
+          "when": "view == monkeytype.sidebar",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
