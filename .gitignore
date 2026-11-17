@@ -2,4 +2,6 @@ out
 node_modules
 .vscode-test
 *.vsix
+extension.vsixmanifest
+[Content_Types].xml
 .DS_Store

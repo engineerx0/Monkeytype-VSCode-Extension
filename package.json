@@ -1,6 +1,6 @@
 {
   "name": "monkeytype-vscode",
-  "displayName": "Monkeytype",
+  "displayName": "Monkeytype for VS Code",
   "description": "Quick access to Monkeytype inside Visual Studio Code's integrated browser.",
   "version": "0.1.0",
   "publisher": "engineerx0",
