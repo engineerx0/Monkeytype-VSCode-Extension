@@ -59,13 +59,23 @@ Because this extension is written in pure native JavaScript for VS Code's Extens
 3. A new VS Code Extension Development Host window will open with Monkeytype ready to use!
 
 ### Option 2: Install Permanently in Your VS Code
-To have the extension permanently available in your everyday VS Code without compiling or packaging:
-- Copy or link this folder into your VS Code extensions directory:
-  ```powershell
-  # On Windows PowerShell:
-  Copy-Item -Path "c:\Users\mridul.chandrawanshi\Downloads\Projects\Antigravity\MonkeyTypeVSCodeExtension" -Destination "$env:USERPROFILE\.vscode\extensions\monkeytype-vscode" -Recurse
-  ```
-- Restart VS Code. The Monkeytype icon will appear on your left sidebar!
+To have the extension permanently available in your everyday VS Code without compiling or packaging, copy this folder into your VS Code extensions directory:
+
+**Windows (PowerShell):**
+```powershell
+Copy-Item -Path "c:\Users\mridul.chandrawanshi\Downloads\Projects\Antigravity\MonkeyTypeVSCodeExtension" -Destination "$env:USERPROFILE\.vscode\extensions\monkeytype-vscode" -Recurse
+```
+
+**macOS & Linux (Terminal):**
+```bash
+cp -r /path/to/MonkeyTypeVSCodeExtension ~/.vscode/extensions/monkeytype-vscode
+```
+
+> **💡 Tip (Symlink):** If you prefer not to copy files, you can create a symbolic link so any local edits update instantly:
+> - **macOS / Linux:** `ln -s "$(pwd)" ~/.vscode/extensions/monkeytype-vscode`
+> - **Windows (PowerShell as Admin):** `New-Item -ItemType SymbolicLink -Path "$env:USERPROFILE\.vscode\extensions\monkeytype-vscode" -Target (Get-Location)`
+
+After copying or linking, restart VS Code. The Monkeytype icon will appear on your left Activity Bar!
 
 ---
 
